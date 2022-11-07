@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--href should be like this for Flask because 'href="satic/css/main.css" doesnt work' -->
+    <!-- 'url_for' is a flask function -->
+    <link rel="stylesheet" href="{{ url_for('static', filename ='css/main.css') }}"> 
     {% block head %}{% endblock %}
 </head>
 <body>
